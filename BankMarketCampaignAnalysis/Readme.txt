@@ -30,8 +30,8 @@ The project provides valuable insights into customer behavior and the factors in
 
 ## Usage
 
-1. Clone the repository: `git clone https://github.com/your-username/bank-marketing-analysis.git`
-2. Install dependencies: `pip install -r requirements.txt`
+1. Clone the repository: `git clone https://github.com/Jayn412/mlai/tree/main/BankMarketCampaignAnalysis'
+2. Install dependencies: `pip install -r [ check for python libraries] `
 3. Run the Jupyter notebook: `jupyter notebook BankMarketingCampaignAnalysis.ipynb`
 
 ## Contributing
