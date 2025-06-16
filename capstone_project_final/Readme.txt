@@ -1,15 +1,15 @@
-# 🛍️ E-Commerce Customer Segmentation Capstone
+# 🛍️ E-Commerce AI Driven Customer Segmentation Capstone Project
 
 ## 📌 Problem Statement
 
-E-commerce platforms often struggle with broad, ineffective marketing campaigns that waste resources and fail to engage customers personally. This project addresses that challenge by identifying meaningful customer segments to **enable personalized marketing strategies** that increase retention, satisfaction, and sales.
+E-commerce platforms often struggle with broad, ineffective marketing campaigns that waste resources and fail to engage customers personally. 
+This project addresses that challenge by identifying meaningful customer segments using real-world data.
 
 ---
 
 ## 🎯 Goal
 
-Develop a **data-driven customer segmentation model** using behavioral and demographic data to:
-
+Develop a **AI driven customer segmentation model** using behavioral and demographic data to:
 - Improve marketing ROI
 - Personalize campaigns
 - Retain high-value customers
@@ -19,12 +19,22 @@ Develop a **data-driven customer segmentation model** using behavioral and demog
 
 ## 📂 Data Sources
 
-- `E-commerce Customer Behavior.csv`  
+- **E-commerce_Customer_Behavior.csv**  
   Includes:
   - **Demographics**: Age, Gender, City, Membership Type
   - **Purchases**: Total Spend, Items Purchased, Discounts Used
   - **Engagement**: Days Since Last Purchase, Satisfaction Level
   - **Ratings**: Average Product Ratings
+
+<details>
+<summary>Sample Data Preview</summary>
+
+| CustomerID | Age | Gender | City | MembershipType | TotalSpend | ItemsPurchased | DiscountsUsed | DaysSinceLastPurchase | SatisfactionLevel | AvgProductRating |
+|------------|-----|--------|------|---------------|------------|----------------|---------------|----------------------|-------------------|------------------|
+| 1001       | 29  | F      | NYC  | Gold          | 1500       | 12             | 2             | 10                   | 4.5               | 4.6              |
+| 1002       | 42  | M      | LA   | Silver        | 800        | 6              | 1             | 34                   | 3.8               | 4.1              |
+
+</details>
 
 ---
 
@@ -45,7 +55,12 @@ Key Findings:
 - Customers with higher `Average Ratings` and satisfaction tend to spend more
 - Discount usage patterns vary by age and membership type
 
-Visuals:
+**Visualizations:**
+
+| Distribution of Total Spend | Correlation Heatmap |
+|----------------------------|---------------------|
+| ![Total Spend Histogram](images/total_spend_hist.png) | ![Correlation Heatmap](images/corr_heatmap.png) |
+
 - Histograms, boxplots, and heatmaps revealed variable distributions and correlations
 
 ---
@@ -55,8 +70,7 @@ Visuals:
 Created additional insights:
 - Encoded categorical variables
 - Scaled features for clustering
-- Prepared a cluster-friendly dataset with key variables:
-  - Total Spend, Items Purchased, Satisfaction Level, etc.
+- Prepared a cluster-friendly dataset with key variables: Total Spend, Items Purchased, Satisfaction Level, etc.
 
 ---
 
@@ -64,19 +78,25 @@ Created additional insights:
 
 Used **K-Means** clustering to identify customer groups.
 
-### 📊 Optimal Clusters: 4  
-Validated using:
-- **Elbow Method**
-- **Silhouette Score** (~0.62)
+- **Optimal Clusters:** 4  
+  Validated using:
+  - **Elbow Method:**  
+    ![Elbow Method Plot](images/elbow_method.png)
+  - **Silhouette Score:**  
+    ![Silhouette Score Plot](images/silhouette_score.png) (Score ≈ 0.62)
 
 ### 📦 Customer Segments
 
-| Cluster | Label                        | Key Traits |
-|--------:|------------------------------|------------|
-| 0       | Discount-Driven Occasional Shoppers | Older, mid-spenders, use discounts often |
-| 1       | Young Bargain Hunters        | Very active, high spend, rely on discounts |
-| 2       | Moderate Loyal Customers     | High satisfaction, steady spend, low discounts |
-| 3       | High-Value Frequent Buyers   | Big spenders, very loyal, no discounts |
+| Cluster | Label                            | Key Traits                                   |
+|--------:|----------------------------------|----------------------------------------------|
+| 0       | Discount-Driven Occasional Shoppers | Older, mid-spenders, use discounts often   |
+| 1       | Young Bargain Hunters            | Very active, high spend, rely on discounts   |
+| 2       | Moderate Loyal Customers         | High satisfaction, steady spend, low discounts |
+| 3       | High-Value Frequent Buyers       | Big spenders, very loyal, no discounts       |
+
+**Cluster Visualizations:**
+- ![Cluster Distribution Pie Chart](images/cluster_pie.png)
+- ![Cluster Centers Heatmap](images/cluster_centers_heatmap.png)
 
 ---
 
@@ -85,33 +105,35 @@ Validated using:
 Used **Logistic Regression** to predict cluster membership.
 
 | Metric        | Value |
-|---------------|--------|
-| Accuracy      | 100%   |
-| Precision     | 100%   |
-| Recall        | 100%   |
-| F1-Score      | 100%   |
-| ROC-AUC Score | 1.00   |
+|---------------|-------|
+| Accuracy      | 100%  |
+| Precision     | 100%  |
+| Recall        | 100%  |
+| F1-Score      | 100%  |
+| ROC-AUC Score | 1.00  |
 
 ✅ Model confirms clusters are **distinct and well-separated**.
 
 ---
 
-## 📊 Visualizations Included
+## 📊 Visualizations and Reports
 
-- Cluster Distribution Pie Chart
-- Silhouette Score vs Cluster Count
-- Heatmap of Cluster Centers
+- Cluster Distribution Pie Chart  
+- Silhouette Score vs Cluster Count  
+- Heatmap of Cluster Centers  
+- Interactive Jupyter Notebooks ([CapstonePart1.ipynb](./CapstonePart1.ipynb), [CapstonePart2.ipynb](./CapstonePart2.ipynb))
+- [Full HTML Report](reports/customer_segmentation_report.html) (if available)
 
 ---
 
 ## 💡 Marketing Recommendations
 
-| Segment | Action |
-|---------|--------|
-| **Occasional Shoppers** | Loyalty programs, win-back campaigns |
-| **Bargain Hunters** | Flash deals, student discounts, gamified offers |
-| **Loyal Moderates** | Personalized emails, early access |
-| **VIPs** | Concierge service, exclusive invites, VIP clubs |
+| Segment                | Action                                         |
+|------------------------|------------------------------------------------|
+| **Occasional Shoppers**| Loyalty programs, win-back campaigns           |
+| **Bargain Hunters**    | Flash deals, student discounts, gamified offers|
+| **Loyal Moderates**    | Personalized emails, early access              |
+| **VIPs**               | Concierge service, exclusive invites, VIP clubs|
 
 ---
 
@@ -125,9 +147,12 @@ Used **Logistic Regression** to predict cluster membership.
 
 ## 📎 Files
 
-- `customer_segmentation.ipynb`: Full analysis notebook
+- `CapstonePart1.ipynb`: Initial EDA, preprocessing, and modeling  
+- `CapstonePart2.ipynb`: Advanced clustering, analysis, and recommendations  
+- `E-commerce Customer Behavior.csv`: Raw dataset  
+- `images/`: All plot images  
+- `reports/customer_segmentation_report.html`: Interactive report (optional)  
 - `README.md`: This summary
-- `E-commerce Customer Behavior.csv`: Raw dataset
 
 ---
 
@@ -137,3 +162,19 @@ Used **Logistic Regression** to predict cluster membership.
 - Jupyter Notebook
 - K-Means Clustering
 - Logistic Regression
+
+---
+
+### Instructions
+
+1. Clone the repo:
+    ```bash
+    git clone https://github.com/Jayn412/mlai.git
+    ```
+2. Install dependencies (`requirements.txt` or notebook cells)
+3. View notebooks via Jupyter
+4. View images in `images/` and reports in `reports/`
+
+---
+
+
