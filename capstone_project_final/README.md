@@ -59,7 +59,7 @@ Key Findings:
 
 | Distribution of Total Spend | Correlation Heatmap |
 |----------------------------|---------------------|
-| ![Total Spend Histogram](images/eda/eda_Total Spend.png) | ![Correlation Heatmap](images/eda/multi_heatmap.png) |
+| ![Total Spend Histogram](images/eda/eda_Total_Spend.png) | ![Correlation Heatmap](images/eda/multi_heatmap.png) |
 
 - Histograms, boxplots, and heatmaps revealed variable distributions and correlations
 
