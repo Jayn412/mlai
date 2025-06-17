@@ -1,4 +1,4 @@
-# 🛍️ E-Commerce AI Driven Customer Segmentation Capstone Project
+# 🛍️ AI-Driven Customer Segmentation E-Commerce Capstone Project
 
 ## 📌 Problem Statement
 
