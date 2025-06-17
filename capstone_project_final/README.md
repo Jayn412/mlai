@@ -95,8 +95,8 @@ Used **K-Means** clustering to identify customer groups.
 | 3       | High-Value Frequent Buyers       | Big spenders, very loyal, no discounts       |
 
 **Cluster Visualizations:**
-- ![Cluster Distribution Pie Chart](images/cluster_pie.png)
-- ![Cluster Centers Heatmap](images/cluster_centers_heatmap.png)
+- ![Customer Cluster Summary ](images/customer_clusters_summary.png)
+- ![Distance from Customer to Cluster Center Heatmap](images/distance_heatmap.png)
 
 ---
 
@@ -122,7 +122,8 @@ Used **Logistic Regression** to predict cluster membership.
 - Silhouette Score vs Cluster Count  
 - Heatmap of Cluster Centers  
 - Interactive Jupyter Notebooks ([CapstonePart1.ipynb](notebooks/CapstonePart1.ipynb), [CapstonePart2.ipynb](notebooks/CapstonePart2.ipynb))
-- [Full HTML Report](reports/customer_segmentation_report.html) (if available)
+- [Full HTML Report](reports/customersegmentation_report.pdf)
+- [Gen AI Visual Reports on images](reports/genAI_Imagereports.png)
 
 ---
 
@@ -151,7 +152,7 @@ Used **Logistic Regression** to predict cluster membership.
 - `CapstonePart2.ipynb`: Advanced clustering, analysis, and recommendations  
 - `E-commerce Customer Behavior.csv`: Raw dataset  
 - `images/`: All plot images  
-- `reports/customer_segmentation_report.html`: Interactive report (optional)  
+- `reports/customersegmentation_report.pdf: genAI visual reports
 - `README.md`: This summary
 
 ---
@@ -167,9 +168,10 @@ Used **Logistic Regression** to predict cluster membership.
 
 ### Instructions
 
-1. Clone the repo:
+1. Clone the repo and checkout the branch capstone_AI_customer_segmentation:
     ```bash
     git clone https://github.com/Jayn412/mlai.git
+    git checkout capstone_AI_customer_segmentation
     ```
 2. Install dependencies (`requirements.txt` or notebook cells)
 3. View notebooks via Jupyter
@@ -204,7 +206,8 @@ Directory structure of the project ➖
 
 
 
-Link to notebooks -https://github.com/Jayn412/mlai/blob/capstone_AI_customer_segmentation/capstone_project_final/notebooks/CapstonePart1.ipynb
+Link to notebooks- 
+https://github.com/Jayn412/mlai/blob/capstone_AI_customer_segmentation/capstone_project_final/notebooks/CapstonePart1.ipynb
 https://github.com/Jayn412/mlai/blob/capstone_AI_customer_segmentation/capstone_project_final/notebooks/CapstonePart2.ipynb
 https://github.com/Jayn412/mlai/blob/capstone_AI_customer_segmentation/capstone_project_final/notebooks/genAIreports.ipynb
 
