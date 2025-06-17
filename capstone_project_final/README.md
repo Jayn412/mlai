@@ -59,7 +59,7 @@ Key Findings:
 
 | Distribution of Total Spend | Correlation Heatmap |
 |----------------------------|---------------------|
-| ![Total Spend Histogram](images/total_spend_hist.png) | ![Correlation Heatmap](images/corr_heatmap.png) |
+| ![Total Spend Histogram](images/eda/eda_total_spend_hist.png) | ![Correlation Heatmap](images/eda/multi_heatmap.png) |
 
 - Histograms, boxplots, and heatmaps revealed variable distributions and correlations
 
@@ -83,7 +83,7 @@ Used **K-Means** clustering to identify customer groups.
   - **Elbow Method:**  
     ![Elbow Method Plot](images/elbow_method.png)
   - **Silhouette Score:**  
-    ![Silhouette Score Plot](images/silhouette_score.png) (Score ≈ 0.62)
+    Silhouette Score: 0.5930051416003562
 
 ### 📦 Customer Segments
 
@@ -121,7 +121,7 @@ Used **Logistic Regression** to predict cluster membership.
 - Cluster Distribution Pie Chart  
 - Silhouette Score vs Cluster Count  
 - Heatmap of Cluster Centers  
-- Interactive Jupyter Notebooks ([CapstonePart1.ipynb](./CapstonePart1.ipynb), [CapstonePart2.ipynb](./CapstonePart2.ipynb))
+- Interactive Jupyter Notebooks ([CapstonePart1.ipynb](notebooks/CapstonePart1.ipynb), [CapstonePart2.ipynb](notebooks/CapstonePart2.ipynb))
 - [Full HTML Report](reports/customer_segmentation_report.html) (if available)
 
 ---
