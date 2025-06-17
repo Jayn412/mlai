@@ -204,12 +204,13 @@ Directory structure of the project ➖
 
 
 
-Link to notebook -https://github.com/Jayn412/AILab/blob/main/UsedCarCRISP_DM.ipynb
+Link to notebooks -https://github.com/Jayn412/mlai/blob/capstone_AI_customer_segmentation/capstone_project_final/notebooks/CapstonePart1.ipynb
+https://github.com/Jayn412/mlai/blob/capstone_AI_customer_segmentation/capstone_project_final/notebooks/CapstonePart2.ipynb
+https://github.com/Jayn412/mlai/blob/capstone_AI_customer_segmentation/capstone_project_final/notebooks/genAIreports.ipynb
 
 This project uses CRISP-DM methodology that includes Business Understanding, Data Understanding, Data Preparation, Modeling, Evaluation, and Deployment. 
 
 Every code cell explains the steps in each module along with the results.
-
 
 Reports have the detailed explanation on the outcome of some of the code execution part as well as the visualization part. 
 
