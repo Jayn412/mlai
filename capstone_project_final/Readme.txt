@@ -177,4 +177,40 @@ Used **Logistic Regression** to predict cluster membership.
 
 ---
 
+Directory structure of the project ➖
+=====
+/capstone_project_final/
+│
+├── /data/                        # Directory for dataset(s)
+│   └── E-commerce_Customer_Behavior.csv
+│        df_features_for_modeling.csv
+|        segmentation_summary_df.csv
+├── /notebooks/                   # Jupyter notebooks for analysis
+│   └── CapstonePart1.ipynb
+│       CapstonePart2.ipynb
+|       getAIreports.ipynb
+├── /reports/                     # Folder for generated reports 
+│   └── customersegmentation_report.pdf
+|       genAI_Imagereports.png
+|       genAI_Imagereports2.png
+|       genAI_Imagereports5.png
+|       image_summary.html
+├── /images/                      #  visualization  images 
+│   └── *.png     │
+├── /Capstone_AI_Driven_Customer_Segmentation.pdf #problem statement 
+├── /NotebookSteps.pdf            # list the order steps followed in notebooks
+├── /README.md                    # Summary of findings and link to the notebooks
+└── /requirements.txt             #  specific packages or libraries used
+
+
+
+Link to notebook -https://github.com/Jayn412/AILab/blob/main/UsedCarCRISP_DM.ipynb
+
+This project uses CRISP-DM methodology that includes Business Understanding, Data Understanding, Data Preparation, Modeling, Evaluation, and Deployment. 
+
+Every code cell explains the steps in each module along with the results.
+
+
+Reports have the detailed explanation on the outcome of some of the code execution part as well as the visualization part. 
+
 
