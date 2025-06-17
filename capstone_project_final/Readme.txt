@@ -213,5 +213,3 @@ This project uses CRISP-DM methodology that includes Business Understanding, Dat
 Every code cell explains the steps in each module along with the results.
 
 Reports have the detailed explanation on the outcome of some of the code execution part as well as the visualization part. 
-
-
